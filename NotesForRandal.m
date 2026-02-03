@@ -37,3 +37,13 @@ ylabel('y-value');
 %window pops up. This is because each new plot overrides the previous one.
 %Comment out the plots that aren't relevant to see the one you want to see.
 
+%%Example 4
+%Graphing with two variables, notice the parentheses for the title {-x}
+x = 0:0.01:10;
+y = exp(-x);
+plot(x,y);
+title('Exponential function e^{-x}');
+xlabel('x-values');
+ylabel('y-label');
+
+
