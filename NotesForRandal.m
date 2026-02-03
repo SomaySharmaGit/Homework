@@ -100,3 +100,27 @@ plot(x,y);
 title('Piecewise Functions');
 xlabel('x');
 ylabel('y');
+
+%% Example 10
+% cumsum is a cumulative sum that adds everything before it. Use help
+% cumsum for more information
+x = 1:200;
+y = cumsum(randn(1,200));
+plot(x,y);
+
+%% Example 11
+% Using a logarithmic scale by plotting in loglog()
+x = 0.1:0.1:10;
+y = x.^3;
+loglog(x,y);
+title('Log-Log Plot');
+
+%% Example 12
+% "Matrix multiplication". x is 1 row and 300 columns, x is duplicated into
+% 4 rows so that each row of k can multiply an entire row of x. Look in the
+% workspace for more information
+x = linspace(0,2*pi,300);
+k = [1 2 3 4]'; %Transposed with the " ' " symbol
+y = sin(k * x);
+plot(x,y);
+legend('sin(x)','sin(2x)','sin(3x)','sin(4x)');
