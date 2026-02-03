@@ -1,16 +1,14 @@
 clc, clearvars
 
 a = 1; 
-b = 5;
-c = 6;
+b = -1;
+c = -6;
 
 root1 = positive_root(a,b,c);
 root2 = negative_root(a,b,c);
 
-formatspec = 'The two roots of the given polynomial are %f and %f';
+formatspec = 'The two roots of the given polynomial are %f and %f\n';
 fprintf(formatspec, root1, root2);
-
-
 
 
 function result = positive_root(a,b,c)
