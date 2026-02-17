@@ -1,17 +1,17 @@
 clc, clearvars
 
-disp(natural_log(1));
-disp(natural_log(0.5));
-disp(natural_log(0));
+disp(log_function(1));
+disp(log_function(0.5));
+disp(log_function(0));
 
 
 
 
-function result = natural_log(value)
-    if value <= 0
+function result = log_function(value)
+    if value >=1
         result = [];
-        disp("Not in the domain of ln");
+        disp("Not in the domain of this function");
     else 
-        result = log(value);
+        result = log(1/(1-value));
     end
 end
